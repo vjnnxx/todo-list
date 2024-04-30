@@ -1,11 +1,41 @@
 import toDo from './scripts/toDo';
-
 import createProject from './scripts/project';
+import styles from './style.css';
 
-let task1 = new toDo('Projeto final', 'Trabalho de conclusão de curso', 1, '09-05-2024');
+console.log(styles)
 
-const project = createProject();
+// let task1 = new toDo('Projeto final', 'Trabalho de conclusão de curso', 1, '09-05-2024');
 
-project.addTask(task1);
+// const project = createProject('Projeto Padrão');
 
-console.log(project.getTasks())
+// project.addTask(task1);
+
+// const divToDo = document.createElement('div');
+
+// const divProject = document.createElement('div');
+
+// const projectTitle = document.createElement('p');
+
+// divProject.appendChild(projectTitle);
+
+// projectTitle.textContent = `${project.getTitle()}`;
+
+// divToDo.classList.toggle('testando');
+
+// const toDos = project.getTasks();
+
+// toDos.forEach(toDo => {
+//     divToDo.innerHTML += `
+//     <p> ${toDo.title} </p>
+//     <p> ${toDo.dueDate} </p>
+//     <p> ${toDo.description} </p>
+//     <p> ${toDo.isComplete} </p>
+//     <p> ${toDo.priority} </p>
+// `;   
+// });
+
+
+
+// divProject.appendChild(divToDo);
+
+// document.body.appendChild(divProject)
