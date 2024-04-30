@@ -1,8 +1,16 @@
 import toDo from './scripts/toDo';
 import createProject from './scripts/project';
+import loadTopSection from './scripts/loadTopSection';
+import loadTaskSection from './scripts/loadTaskSection';
+import marcyIcon from './icons/marcy.jpg';
+import notifyIcon from './icons/bell-ring.svg';
+import plusIcon from './icons/plus-circle-outline.svg';
 import styles from './style.css';
 
-console.log(styles)
+loadTopSection(marcyIcon, notifyIcon);
+
+loadTaskSection(plusIcon);
+
 
 // let task1 = new toDo('Projeto final', 'Trabalho de conclusão de curso', 1, '09-05-2024');
 

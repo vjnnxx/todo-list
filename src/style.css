@@ -1,14 +1,73 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Regular.ttf');
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     margin: 0;
+}
+
+.main{
+    display: flex;
 }
 
 .sidebar{
     height: 100vh;
     width: 300px;
-    background-color: red;
+    background-color: #D5D5D5;
     overflow: auto;
 }
 
-.testando{
-    background-color: blue;
+
+/* Top section */
+
+.icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.icon.notify{
+    height: 30px;
+}
+
+.icon-div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon-div>p,.addTask>p{
+    font-size: 20px;
+}
+
+.top-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+/* Tasks section */
+
+.tasks-section{
+    padding: 16px;
+}
+
+.addTask{
+    border: none;
+    background-color: #D5D5D5;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+}
+
+.addTask>img{
+    height: 40px;
 }
