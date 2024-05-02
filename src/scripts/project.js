@@ -3,8 +3,8 @@ function createProject(title){
 
     const projectTitle = title;
 
-    const addTask = (toDo) =>{
-        tasks.push(toDo);
+    const addTask = (Task) =>{
+        tasks.push(Task);
     };
 
     const getTitle = () => projectTitle;

@@ -1,12 +1,16 @@
 function showTaskForm(){
-    const content = document.querySelector('.content');
-    
-    const h1 = document.createElement('h1');
-    h1.textContent = 'Formulário para adicionar tarefas';
+    const modal = document.querySelector('.modal');
+    modal.style.display = 'block';
 
-    content.appendChild(h1);
+    const submitForm = document.querySelector('#submit');
+    submitForm.addEventListener('click', ()=>{
+        createTask();
+    });
 
-    //Não precisa necessariamente funcionar como aba, pode abrir um modal e etc
+    const closeModal = document.querySelector('#cancel');
+    closeModal.addEventListener('click', ()=>{
+        modal.style.display = 'none';
+    });
 }
 
 export default showTaskForm;

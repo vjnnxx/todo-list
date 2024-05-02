@@ -33,7 +33,59 @@
 
     </div>
 
+    <div class="modal">
 
+        <div class="modal-content">
+
+            <div class="modal-title">
+                <p>Cadastrar Tarefa</p>
+            </div>
+            
+
+            <form action="" class="form-task">
+
+                <div class="form-row">
+                   <label for="title">Título</label>
+                    <input type="text" name="title" id="title" placeholder="Título da tarefa"> 
+                </div>
+                
+
+                <div class="form-row">
+                    <label for="description">Descrição</label>
+                    <input type="text" name="description" id="description" placeholder="Descrição da tarefa">
+                </div>
+
+                <div class="form-row">
+                    <label for="priority">Prioridade</label>
+                    <select name="priority" id="priority">
+                        <option value="3">Alta</option>
+                        <option value="2">Média</option>
+                        <option value="1">Baixa</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="duedate">Prazo</label>
+                    <input type="date" name="duedate" id="duedate">
+                </div>
+
+                <div class="form-row">
+                    <!-- Usar js pra mudar opções com projetos salvos em local storage -->
+                    <label for="project">Projeto</label>
+                    <select name="project" id="project">
+                        <option value="#">Projeto Default</option> 
+                    </select>
+                </div>
+
+                <div class="row-buttons">
+                    <button id="submit">OK</button>
+                    <button id="cancel">Cancelar</button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
     
 </body>
 </html>
