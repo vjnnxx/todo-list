@@ -18,18 +18,17 @@
                 <!-- Seção com opções de adicionar tasks / filtrar pela data de hoje / tarefas por vir -->
                 
             </div>
-    
-            <div class="projects-section">
-                <!-- Seção que exibe alguns projetos na side bar -->
-                Projetos
-            </div>
-
             
         </div>
 
         <div class="content">
             <div class="content-title">
                 <p>Tarefas</p>
+            </div>
+
+            <div class="main-content">
+
+
             </div>
             
         </div>
@@ -42,6 +41,10 @@
 
             <div class="modal-title">
                 <p>Cadastrar Tarefa</p>
+            </div>
+
+            <div class="warning">
+                <span id="warning-text"></span>
             </div>
             
 
@@ -70,14 +73,6 @@
                 <div class="form-row">
                     <label for="duedate">Prazo</label>
                     <input type="date" name="duedate" id="duedate">
-                </div>
-
-                <div class="form-row">
-                    <!-- Usar js pra mudar opções com projetos salvos em local storage -->
-                    <label for="project">Projeto</label>
-                    <select name="project" id="project">
-                        <option value="#">Projeto Default</option> 
-                    </select>
                 </div>
 
                 <div class="row-buttons">

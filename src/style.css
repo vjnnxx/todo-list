@@ -19,13 +19,14 @@ body {
     height: 100vh;
     width: 350px;
     background-color: #D5D5D5;
-    overflow: auto;
+    position: fixed; 
 }
 
 /* Content */
 
 .content{
     width: 80%;
+    margin-left: 350px;
 }
 
 .content-title>p{
@@ -47,7 +48,21 @@ body {
 
 .task-card{
   width: 300px;
-  border: 1px solid black;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: #D5D5D5;
+  padding: 8px;
+}
+
+.delete-icon{
+  height: 30px;
+}
+
+.task-card>button{
+  border: none;
+  background-color: #D5D5D5;
+  height: 30px;
+  width: 30px;
 }
 
 /* Top section */
@@ -157,7 +172,7 @@ body {
     width: 100px;
   }
 
-  .modal-title{
+  .modal-title, .warning{
     display: flex;
     justify-content: center;
   }
@@ -165,3 +180,9 @@ body {
   .modal-title>p{
     font-size: 20px;
   }
+
+  #warning-text{
+    color: red;
+    font-size: 12px;
+  }
+

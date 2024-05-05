@@ -1,4 +1,5 @@
 import Task from "./Task";
+import loadContent from "./loadContent";
 
 function createTask(){
     // title - description - priotiry - dueDate - project
@@ -10,10 +11,11 @@ function createTask(){
 
     const duedate = document.querySelector('#duedate').value;
 
-    const project = document.querySelector('#project').value;
-
-
-    if(title == '' || description == '' || priority == '' || duedate == '') return "Vazio não tem como chefia";
+    if(title == '' || description == '' || priority == '' || duedate == ''){
+        const warning = document.querySelector('#warning-text');
+        warning.textContent = 'Preencha todos os campos!';
+        return
+    } 
 
     const toDo = new Task(title, description, priority, duedate);
 
@@ -35,6 +37,10 @@ function createTask(){
 
     const form = document.querySelector('#form');
     form.reset();
+
+    const content = document.querySelector('.main-content');
+    content.innerHTML = '';
+    loadContent();
 
     return
 

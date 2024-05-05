@@ -9,7 +9,7 @@ function loadTaskSection(plusIcon){
     plusImage.src = plusIcon;
 
     const addTaskText = document.createElement('p');
-    addTaskText.textContent = 'New task';
+    addTaskText.textContent = 'Nova tarefa';
 
     addTaskButton.appendChild(plusImage);
     addTaskButton.appendChild(addTaskText);
